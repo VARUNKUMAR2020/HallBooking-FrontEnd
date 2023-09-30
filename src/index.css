@@ -1,0 +1,28 @@
+body{
+  overflow-x: hidden;
+}
+.nav-bar-2{
+  background-color:#E72E77;
+  color: white;
+}
+.nav-bar-1{
+  background-color: #B4245D;
+  color: white;
+}
+.drop{
+  outline: none;
+}
+.login{
+ border: 4px solid rgb(214, 166, 214);
+ margin-top: 100px;
+ margin-left: 300px;
+ margin-right: 300px;
+}
+.link{
+  font-size: 18px;
+  color: white;
+}
+
+.signup{
+  color: black;
+}
