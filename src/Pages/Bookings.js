@@ -9,7 +9,7 @@ const Bookings = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:4000/hallbooking/bookedhall", {
+      .post("https://hall-booking-backend-mern.onrender.com/hallbooking/bookedhall", {
         token: localStorage.getItem("token"),
       })
       .then((res) => {

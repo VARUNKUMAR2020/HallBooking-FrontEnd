@@ -11,7 +11,7 @@ const ResetPassword = () => {
   const handleReset = () => {
     if (password === confirmPassword) {
       axios
-        .post("http://localhost:4000/hallbooking/reseetPassword", {
+        .post("https://hall-booking-backend-mern.onrender.com/hallbooking/reseetPassword", {
           password,
           token: localStorage.getItem("token"),
         })

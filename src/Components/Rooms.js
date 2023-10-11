@@ -5,7 +5,7 @@ import axios from "axios";
 const Rooms = () => {
   const handleBook = (name, description) => {
     axios
-      .post("http://localhost:4000/hallbooking/bookings", {
+      .post("https://hall-booking-backend-mern.onrender.com/hallbooking/bookings", {
         name,
         description,
         token: localStorage.getItem("token"),

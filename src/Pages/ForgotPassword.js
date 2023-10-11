@@ -6,7 +6,7 @@ const ForgotPassword = () => {
 
   const handleLink = () => {
     axios
-      .post("http://localhost:4000/hallbooking/forgotpassword", { email })
+      .post("https://hall-booking-backend-mern.onrender.com/hallbooking/forgotpassword", { email })
       .then((res) => {
         if (res.data.status) {
           alert(res.data.message);

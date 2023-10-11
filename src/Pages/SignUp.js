@@ -11,7 +11,7 @@ const SignUp = () => {
 
   const handleCreate = () => {
     axios
-      .post("http://localhost:4000/hallbooking/create", {
+      .post("https://hall-booking-backend-mern.onrender.com/hallbooking/create", {
         name,
         email,
         password,
