@@ -1,7 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  
+  const navigate = useNavigate()
+
+  const handlelogout = () =>{
+    localStorage.clear();
+    navigate('/')
+  }
+
   return (
     <div>
       <div className="nav-bar-1 py-2">
@@ -20,11 +28,10 @@ const Navbar = () => {
          <h3 className="nav-bar ps-3">Varun's Bookings</h3>
          </div>
          <div className="col-6 fs-5 text-center">
-          <Link to="/" className="link text-decoration-none ps-4 pe-4"></Link>
-          <Link to="/" className="link text-decoration-none ps-4 pe-4">Create Hall</Link>
-          <Link to="/" className="link text-decoration-none ps-4 pe-4">Book Hall</Link>
-          <Link to="/" className="link text-decoration-none ps-4 pe-4">All Bookings</Link>
-          <button className="btn btn-danger">LOGOUT</button>
+         <Link to="/home" className="link text-decoration-none ps-4 pe-4">Book Hall</Link>
+          <Link to="/createhall" className="link text-decoration-none ps-4 pe-4">Create Hall</Link>
+          <Link to="/bookings" className="link text-decoration-none ps-4 pe-4">All Bookings</Link>
+          <button className="btn btn-danger" onClick={handlelogout}>LOGOUT</button>
          </div>
         </div>
         
